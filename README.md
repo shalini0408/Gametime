@@ -52,9 +52,7 @@ Contains the RSVP form where users can enter a participant's name and select a r
 ### 🔹 Participant Component
 Opens as a dialog/modal window and lists all participants who have responded, along with their RSVP choice.
 
-## 📸 Screenshots *(Optional)*
-
-_Add UI screenshots here to showcase the application._
+## 📸 Screenshots
 
 ---<img width="1470" alt="Screenshot 2025-04-12 at 7 51 11 PM" src="https://github.com/user-attachments/assets/de1e96d6-b86c-4409-9eae-2ab0b4f3feb2" />
 
