@@ -1,59 +1,93 @@
-# RsvpApp
+🎉 RSVP Management Service
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+This project is an RSVP Management Web Application built with Angular and **Material UI**, allowing users to add, update, or remove participants for events based on their RSVP status. The application provides real-time tracking of participant responses, presenting clear insights into event attendance.
 
-## Development server
+##Features
 
-To start a local development server, run:
+Event Listing – View a list of all upcoming events.
+*Event Cards – Each event is displayed as a styled card with key details.
+RSVP Form – Add or update participant RSVP using a simple form (player's name is unique).
+Participation Metrics – Displays total participants, confirmed attendees, and declined responses.
+Participants View – A complete list of all participant names and their RSVP statuses.
+In-Memory Data Store – RSVP data is temporarily stored using a JSON structure in the service file.
 
-```bash
-ng serve
+## Tech Stack
+
+- Framework: Angular
+- UI Library: Angular Material
+- Language: TypeScript
+- Styling: CSS
+- Data Handling: Service with a mock JSON structure
+
+## File Structure
+
+```plaintext
+src/
+├── components/
+│   ├── event/                 # Lists all events
+│   ├── event-card/            # Displays individual event info (child of event)
+│   ├── rsvp-management/       # Contains form for RSVP and shows response summary
+│   └── participant/           # Displays list of all participants and their RSVP status
+│
+├── services/
+│   └── rsvp-service/          # Contains RSVP service with mock JSON data store
+│
+└── models/
+    ├── player.ts              # Defines Player model (name, rsvp)
+    └── rsvp-model.ts          # Defines RSVP summary model (total, confirmed, declined)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Components Overview
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🔹 Event Component
+Displays a list of all available events. Acts as a parent component for rendering individual `EventCard` components.
 
-```bash
-ng generate component component-name
-```
+🔹 EventCard Component
+Shows summarized information for each event, including title, time, and other visual elements. It uses Material Card design and animations.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🔹 RsvpManagement Component
+Contains the RSVP form where users can enter a participant's name and select a response (`Yes`, `No`, or `Maybe`). Also shows the summary count of all responses (confirmed, declined, total).
 
-```bash
-ng generate --help
-```
+### 🔹 Participant Component
+Opens as a dialog/modal window and lists all participants who have responded, along with their RSVP choice.
 
-## Building
+## 📸 Screenshots *(Optional)*
 
-To build the project run:
+_Add UI screenshots here to showcase the application._
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🧑‍💻 Setup Instructions
 
-## Running unit tests
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/rsvp-management-app.git
+   ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+2. Navigate to the project directory:
+   ```bash
+   cd rsvp-management-app
+   ```
 
-```bash
-ng test
-```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Running end-to-end tests
+4. Run the development server:
+   ```bash
+   ng serve
+   ```
 
-For end-to-end (e2e) testing, run:
+5. Visit `http://localhost:4200` in your browser.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📄 License
 
-## Additional Resources
+This project is licensed under the MIT License.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+Let me know if you'd like this turned into an actual `README.md` file or need help adding screenshots or a demo link.
