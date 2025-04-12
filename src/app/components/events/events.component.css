@@ -1,0 +1,72 @@
+:root {
+  --gth-blue: #1E3A8A;
+  --gth-brand-blue: #1E3A8A;
+  --gth-light-blue: #3B82F6;
+  --gth-gray: #6B7280;
+  --gth-light-gray: #F3F4F6;
+  --gth-white: #FFFFFF;
+  --text-color: #111827;
+  --card-background: #FFFFFF;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
+}
+
+
+/* Intro Section */
+.intro-section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 36px;
+  text-align: center;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--card-shadow);
+  border: 1px solid var(--gth-light-gray);
+}
+
+.intro-section p {
+  margin: 12px 0;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/* Event List */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px;
+}
+
+app-event-card {
+  flex: 0 1 340px;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+app-event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .logo-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero-header {
+    padding: 30px 16px;
+  }
+
+  .intro-section {
+    padding: 24px;
+  }
+}

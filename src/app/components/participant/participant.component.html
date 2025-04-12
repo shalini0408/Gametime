@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>All Participants</h2>
+<mat-dialog-content>
+  <table class="mat-elevation-z8">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>RSVP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of data.participants; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.rsvp }}</td>
+      </tr>
+    </tbody>
+  </table>
+</mat-dialog-content>

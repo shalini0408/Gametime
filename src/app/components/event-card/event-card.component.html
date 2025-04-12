@@ -1,0 +1,33 @@
+<mat-card class="event-card">
+    <div class="image-container">
+      <img mat-card-image [src]="event.imageUrl" alt="Event speaker">
+      <div class="time-chip">
+        <mat-icon>access_time</mat-icon>
+        {{ event.date }}
+      </div>
+    </div>
+  
+    <mat-card-content>
+      <h3 class="event-title">📢 {{ event.title }}</h3>
+      <p class="event-detail">
+        <mat-icon>location_on</mat-icon>
+        Online event
+      </p>
+      <p class="event-detail">
+        <mat-icon>group</mat-icon>
+        {{ respondedAttendees.length }} people have responded
+      </p>
+      <p class="event-detail">
+        <mat-icon>check_circle</mat-icon>
+        {{ respondedAttendees.length }} participants
+      </p>
+    </mat-card-content>
+  
+    <mat-card-actions class="card-footer">
+      <div class="free-badge">
+        <mat-icon>local_atm</mat-icon> Free
+      </div>
+      <button class = "rsvp-button" [routerLink]="['/rsvp', event.id]">RSVP!</button>
+    </mat-card-actions>
+  </mat-card>
+  

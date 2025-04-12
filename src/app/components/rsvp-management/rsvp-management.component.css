@@ -1,0 +1,179 @@
+/* Base Colors */
+:root {
+  --primary-color: #1c3463;       /* Dodger Blue */
+  --secondary-color:  #1c3463;     /* Orange Red */
+  --accent-color: #32CD32;        /* Lime Green */
+  --background-color: #F5F5F5;    /* White Smoke */
+  --text-color: #333333;          /* Dark Gray */
+}
+
+/* Container */
+.rsvp-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+/* Header */
+.event-header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1c3463;
+}
+
+/* Card Styles */
+.rsvp-card,
+.stats-card,
+.confirmed-attendees {
+  border: 1px solid var(--primary-color);
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.rsvp-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the button horizontally */
+  }
+.rsvp-card h2,
+.stats-card h3,
+.confirmed-attendees h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+}
+
+/* Inputs */
+.input-field,
+.select-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: auto; /* Allow the button to fit content */
+    padding: 8px 16px; /* Adjust padding for a more balanced look */
+    font-size: 14px; /* Slightly larger font size for better readability */
+    font-weight: bold; /* Make the text bold for better visibility */
+    border: none;
+    background-color: #1c3463; /* Background color */
+    color: #ade2f5; /* Text color */
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px; /* Add some space above the button */
+    text-transform: uppercase; /* Uppercase text for better emphasis */
+    letter-spacing: 1px; /* Slight spacing between letters for better readability */
+  }
+  
+  
+  
+
+/* Attendee Grid */
+.attendee-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.attendee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: var(--secondary-color);
+  color: #ade2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.attendee-name {
+  text-align: center;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* Extra Card */
+.extra-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-count {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--primary-color);
+}
+
+.view-all {
+  font-size: 13px;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Styling for Material Icons */
+.status-icon {
+    font-size: 20px; /* Icon size */
+    color: #1c3463; /* Greenish color for confirmation-related icons */
+    margin-right: 8px; /* Space between the icon and the text */
+    vertical-align: middle; /* Align icon vertically with text */
+  }
+  
+  /* Container for status text and icons */
+  .status-info {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between rows */
+  }
+  
+  /* Ensure that the text and icon are in the same line and centered vertically */
+  .status-info mat-icon {
+    font-size: 20px; /* Consistent icon size */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+  }
+  
+  /* Styling for stats card */
+  .stats-card {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .stats-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  

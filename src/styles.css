@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+    --primary-color: #31446b;       /* Dodger Blue */
+    --secondary-color:  #1c3463;     /* Orange Red */
+    --accent-color: #32CD32;        /* Lime Green */
+    --background-color: #F5F5F5;    /* White Smoke */
+    --text-color: #333333;          /* Dark Gray */
+  }
+  
+  /* Container */
+  .rsvp-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+  }

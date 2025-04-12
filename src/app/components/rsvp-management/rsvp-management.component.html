@@ -1,0 +1,65 @@
+<div class="rsvp-container">
+  <div class="event-header" *ngIf="eventId">
+    <h1>RSVP for Event ID: <span class="event-id">{{ eventId }}</span></h1>
+  </div>
+
+  <!-- RSVP Card -->
+  <div class="rsvp-card">
+    <h2>RSVP Management</h2>
+
+    <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
+      <input
+        [(ngModel)]="playerName"
+        name="playerName"
+        required
+        placeholder="Your Name"
+        class="input-field"
+      />
+
+      <select [(ngModel)]="playerRsvp" name="playerRsvp" required class="select-field">
+        <option value="" disabled selected>Going Status</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+      </select>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <!-- RSVP Stats -->
+  <div class="stats-card">
+    <h3>RSVP Status</h3>
+    <p class="status-info">
+      <mat-icon class="status-icon">group</mat-icon>
+      Total Responses: <strong>{{ responseCounts.total }}</strong>
+    </p>
+    <p class="status-info">
+      <mat-icon class="status-icon">thumb_up</mat-icon>
+      Confirmed: <strong>{{ responseCounts.confirmed }}</strong>
+    </p>
+    <p class="status-info">
+      <mat-icon class="status-icon">thumb_down</mat-icon>
+      Declined: <strong>{{ responseCounts.declined }}</strong>
+    </p>
+  </div>
+
+  <!-- Confirmed Attendees -->
+  <div class="confirmed-attendees">
+    <h3>Participants</h3>
+    <div class="attendee-grid">
+      <div class="attendee-card" *ngFor="let player of confirmedAttendees.slice(0, 3)">
+        <div class="avatar">{{ player.name.charAt(0).toUpperCase() }}</div>
+        <span class="attendee-name">
+          {{ player.name.length > 10 ? (player.name | slice:0:10) + '…' : player.name }}
+        </span>
+      </div>
+
+      <!-- View more participants button when more than 3 -->
+      <div *ngIf="confirmedAttendees.length > 3" class="attendee-card extra-card">
+        <div class="circle-count">+{{ confirmedAttendees.length - 3 }}</div>
+        <button class="view-all" (click)="viewAllParticipants()">View all participants</button>
+      </div>
+    </div>
+  </div>
+</div>

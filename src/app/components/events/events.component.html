@@ -1,0 +1,22 @@
+<!-- <div class="hero-header">
+  <div class="header-content">
+    <h1 class="site-title">
+      Welcome to Gametime Hero
+      <img src="../../../logo.png" alt="Gametime Hero Logo" class="logo-image" />
+    </h1>
+  </div>
+</div> -->
+
+<div class="intro-section">
+  <p>
+    Your ultimate sidekick for discovering events and making plans with friends! 
+    Whether it's a campus gathering, a local concert, or a spontaneous hangout, Gametime Hero is here to help you RSVP, stay organized, and never miss a moment.
+  </p>
+  <p>
+    Scroll down to check out all upcoming events. Each card has all the details you need—just click "RSVP" and you're in!
+  </p>
+</div>
+
+<div class="event-list">
+  <app-event-card *ngFor="let event of events" [event]="event"></app-event-card>
+</div>
