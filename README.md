@@ -56,18 +56,19 @@ Opens as a dialog/modal window and lists all participants who have responded, al
 
 _Add UI screenshots here to showcase the application._
 
----
+---<img width="1470" alt="Screenshot 2025-04-12 at 7 51 11 PM" src="https://github.com/user-attachments/assets/de1e96d6-b86c-4409-9eae-2ab0b4f3feb2" />
 
-## 🧑‍💻 Setup Instructions
+
+## Setup Instructions
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/rsvp-management-app.git
+   git@github.com:shalini0408/Gametime.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd rsvp-management-app
+   cd rsvp-app
    ```
 
 3. Install dependencies:
@@ -81,13 +82,3 @@ _Add UI screenshots here to showcase the application._
    ```
 
 5. Visit `http://localhost:4200` in your browser.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-Let me know if you'd like this turned into an actual `README.md` file or need help adding screenshots or a demo link.
