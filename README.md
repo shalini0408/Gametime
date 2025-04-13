@@ -1,4 +1,4 @@
-🎉 RSVP Management Service - [Live](https://gametime-beryl.vercel.app/rsvp/1)
+🎉 RSVP Management Service - [Live](https://gametime-beryl.vercel.app/)
 
 This project is an RSVP Management Web Application built with Angular and **Material UI**, allowing users to add, update, or remove participants for events based on their RSVP status. The application provides real-time tracking of participant responses, presenting clear insights into event attendance.
 
