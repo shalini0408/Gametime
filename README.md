@@ -5,7 +5,7 @@ This project is an RSVP Management Web Application built with Angular and **Mate
 ##Features
 
 Event Listing – View a list of all upcoming events.
-*Event Cards – Each event is displayed as a styled card with key details.
+Event Cards – Each event is displayed as a styled card with key details.
 RSVP Form – Add or update participant RSVP using a simple form (player's name is unique).
 Participation Metrics – Displays total participants, confirmed attendees, and declined responses.
 Participants View – A complete list of all participant names and their RSVP statuses.
