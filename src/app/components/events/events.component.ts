@@ -2,7 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { EventCardComponent } from '../event-card/event-card.component';
+import { EventCardComponent } from '../eventCard/event-card.component';
+
 
 @Component({
   selector: 'app-event',
